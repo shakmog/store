@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Store</title>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track'=> true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="/products">Products</a>
+    <ul class="nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li><a href="/users">User</a></li>
+   </ul>
+  </div>
+</div>
+<div class="container">
+	<div class="row">
+		
+    <div class="span7"><%= yield %></div>
+		
+    <div class="span3">
+      <h2>About Us</h2>
+				Hi my name is Sheriff and I am using twitter bootstrap
+
+		</div>
+    
+    <div class="span2">
+      <h2>Good Stuff</h2>
+        <img src="1.jpg">
+    </div>
+
+	</div>
+	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+  <div class="container-fluid"><center>This text will be center-aligned.</center>
+  </div>
+</nav>
+
+</div>
+
+
+</body>
+</html>
