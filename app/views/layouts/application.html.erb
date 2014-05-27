@@ -7,39 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="/products">Products</a>
-    <ul class="nav">
-      <li class="active"><a href="/">Home</a></li>
-      <li><a href="/users">User</a></li>
-   </ul>
-  </div>
-</div>
-<div class="container">
-	<div class="row">
-		
-    <div class="span7"><%= yield %></div>
-		
-    <div class="span3">
-      <h2>About Us</h2>
-				Hi my name is Sheriff and I am using twitter bootstrap
-
-		</div>
-    
-    <div class="span2">
-      <h2>Good Stuff</h2>
-        <img src="1.jpg">
+  <header class="document-hd">
+    <div class="container">
+      <nav class="cf">
+        <ul class="cf">
+          <li>Glassfiles</li>
+          <li ><a href="/writings">Writings</a></li>
+          <li ><a href="/images">Image</a></li>
+          <li ><a href="/slideshows">Slidesshow</a></li>
+          <li ><a href="/audios">Audio</a></li>
+          <li ><a href="/videos">Video</a></li>
+        </ul>
+      </nav>
     </div>
 
-	</div>
-	<nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
-  <div class="container-fluid"><center>This text will be center-aligned.</center>
+  </header>
+  <div class="container main">
+
+    <%= yield %>
   </div>
-</nav>
-
-</div>
-
-
+    
+  
 </body>
+
 </html>

@@ -46,3 +46,6 @@ gem 'spring',        group: :development
 
 gem 'ransack'
 
+group :development do
+  gem 'guard'
+end
